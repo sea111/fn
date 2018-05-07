@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>基地环境</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/jdhj.css" />
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=您的密钥"></script>
+	</head>
+	<body>
+		<div class="header">
+	    	<img src="images/fn-head-left.png" height="46" class="fl"/>
+	       	<img src="images/fn-head-right.png" height="46" class="fr"/>
+	       	<div class="clear"></div>
+	       	<h1 class="fn-head">阜宁县农业大数据中心</h1>  
+	    </div>
+	    <ul class="top-nav">
+	    	<li class="nav-com"><a href="index.html" target="_blank">首页</a></li>
+	    	<li class="nav-com active"><a href="http://wlw2.zjtpyun.com/company/index?un=fnxnw&pd=123456&ismd5=0&" target="_blank">物联网</a></li>
+	    	<li class="nav-com"><a href="xzjgpt.html" target="_blank">行政监管</a></li>
+	    	<li class="nav-com"><a href="javascript:;" target="_blank">综合服务平台</a></li>
+	    </ul>
+	    <ul class="fn-type">
+	    	<li class="type-title">选择类型</li>
+	    	<li class="jd-first"><i class="jd-com"></i>设施基地</li>
+	    	<li><i class="jd-com"></i>有机基地</li>
+	    	<li><i class="jd-com"></i>特色基地</li>
+	    </ul>
+	    <div id="map" style=""></div>
+		<i class="map-top"></i>
+		<i class="map-bottom"></i>
+		<i class="map-left"></i>
+		<i class="map-right"></i>
+	    <!--<div id="maps"></div>-->
+	    <div class="jd-alert">
+	    	<div class="jd-alert-box">
+	    		<div class="jd-alert-top">
+	    			<img class="jd-alert-close" src="images/fn-jd-close.png"/>
+	    			<div class="jd-variety">西瓜种植基地</div>
+	    			<ul class="jd-list">
+	    				<li class="sp-hj jd-hjxq actives">基地环境</li>
+	    				<li class="sp-hj jd-cksp">查看视频</li>
+	    			</ul>
+	    		</div>
+	    		<div id="jd-alert-box">
+		    		<iframe id="jd_hj" runat="server" src="ckjd.html" width="1200" height="626" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>	    			
+	    		</div>
+	    		<div id="jd-video-box">
+		    		<iframe id="jd_video" runat="server" src="cksp.html" width="1200" height="626" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+		    	</div>
+	    	</div>
+	    	
+	    </div>
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script type="text/javascript" src="js/jdhj.js" ></script>
+	<script>
+		// 百度地图API功能
+	var maps = new BMap.Map("map");    // 创建Map实例
+	maps.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+	//添加地图类型控件
+	maps.addControl(new BMap.MapTypeControl({
+		mapTypes:[
+            BMAP_NORMAL_MAP,
+            BMAP_HYBRID_MAP
+        ]}));	  
+	maps.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+	maps.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+
+		//全屏铺满
+        var ratioX = $(window).width()/1920;
+        var ratioY = $(window).height()/1080;
+        $("body").css({
+            transform: "scale("+ratioX+","+ratioY+")",
+            transformOrigin: "left top",
+            backgroundSize: "100% 100%",
+        });
+	    //调整浏览器窗口全屏铺满
+	    $(window, document).resize(function() {
+	        var ratioX = $(window).width()/1920;
+	        var ratioY = $(window).height()/1080;
+	        $("body").css({
+	            transform: "scale("+ratioX+","+ratioY+")",
+	            transformOrigin: "left top",
+	            backgroundSize: "100% 100%"
+	        });
+	    });
+	</script>
+	</body>
+</html>

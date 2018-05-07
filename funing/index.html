@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit" />  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+    <title>阜宁县农业大数据中心</title>
+    <link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+    <div class="header">
+    	<img src="images/fn-head-left.png" height="46" class="fl"/>
+       	<img src="images/fn-head-right.png" height="46" class="fr"/>
+       	<div class="clear"></div>
+       	<h1 class="fn-head">阜宁县农业大数据中心</h1>  
+    </div>
+    <ul class="top-nav">
+    	<li class="nav-com active"><a href="javascript:;" target="_blank">首页</a></li>
+    	<li class="nav-com"><a href="http://wlw2.zjtpyun.com/company/index?un=fnxnw&pd=123456&ismd5=0&" target="_blank">物联网</a></li>
+    	<li class="nav-com"><a href="xzjgpt.html" target="_blank">行政监管</a></li>
+    	<li class="nav-com"><a href="javascript:;" target="_blank">综合服务平台</a></li>
+    </ul>
+    <div class="wrap">
+        <div class="col01">
+            <div class="box" id="title">
+                <div class="title"><h2>农业农村产值分析</h2></div>    
+                <span class="unit">(单位:万元)</span>
+                <ul class="nync-ul">
+                	<li class="actives nync-com">2010</li>
+                	<li class="nync-com">2011</li>
+                	<li class="nync-com">2012</li>
+                	<li class="nync-com">2013</li>
+                	<li class="nync-com">2014</li>
+                	<li class="nync-com">2015</li>
+                	<li class="nync-com nync-last">2016</li>
+                </ul>
+				<div id="nyncPie1" style="width:500px;height:265px;margin-top:-12px;margin-left: 60px;"></div>
+            	<div id="nyncPie2" style="display:none;width:500px;height:265px;margin-top:-12px;margin-left: 60px;"></div>
+            	<div id="nyncPie3" style="display:none;width:500px;height:265px;margin-top:-12px;margin-left: 60px;"></div>
+            	<div id="nyncPie4" style="display:none;width:500px;height:265px;margin-top:-12px;margin-left: 60px;"></div>	
+            	<div id="nyncPie5" style="display:none;width:500px;height:265px;margin-top:-12px;margin-left: 60px;"></div>
+            	<div id="nyncPie6" style="display:none;width:500px;height:265px;margin-top:-12px;margin-left: 60px;"></div>
+            	<div id="nyncPie7" style="display:none;width:500px;height:265px;margin-top:-12px;margin-left: 60px;"></div>
+            </div>
+            <div class="box" id="title">
+                <div class="title"><h2>主导作物产量分析</h2></div>
+				<div class="zdzw-top">
+					<span class="zdzwcl-d"><i class="zdzw-dun"></i>吨<span>
+					<span class="zdzwcl-m"><i class="zdzw-mu"></i>亩<span>
+				</div>
+                <div id="nyncBar" style="width:530px;height:270px;margin-top: -18px;"></div>                
+            </div>
+        </div>
+        <div class="col02">
+            <ul class="fn-map">
+        		<li class="map-com lfnc">
+        			<span class="map-span area-box">
+	    				<span class="dot"></span>
+	    				<span class="pulse delay-06"></span>
+						<span class="pulse delay-05"></span>
+						<span class="pulse delay-04"></span>
+	    			</span>
+        			<span class="dh-com">凌峰家庭农场</span>
+        		</li>
+        		<li class="map-com cync">
+        			<span class="map-span area-box">
+	    				<span class="dot"></span>
+						<span class="pulse delay-10"></span>
+						<span class="pulse delay-09"></span>
+						<span class="pulse delay-08"></span>
+	    			</span>
+        			<span class="dh-com">晨阳蔬菜种植专业合作社</span>
+        		</li>
+        		<li class="map-com zxnc">
+        			<span class="map-span area-box">
+	    				<span class="dot"></span>
+							<span class="pulse delay-06"></span>
+							<span class="pulse delay-05"></span>
+							<span class="pulse delay-04"></span>
+		    			</span>
+        			<span class="dh-com">众信张敬思种植基地</span>
+        		</li>
+        		<li class="map-com fcnc">
+        			<span class="map-span area-box">
+	    				<span class="dot"></span>
+		    				<span class="pulse delay-10"></span>
+							<span class="pulse delay-09"></span>
+							<span class="pulse delay-08"></span>
+		    			</span>
+        			<span class="dh-com">埠城绿缘商品家庭农场</span>
+        		</li>
+        		<li class="map-com nxnc">
+        			<span class="map-span area-box">
+	    				<span class="dot"></span>
+							<span class="pulse delay-06"></span>
+							<span class="pulse delay-05"></span>
+							<span class="pulse delay-04"></span>
+		    			</span>
+        			<span class="dh-com">益林镇恩新家庭农场</span>
+        		</li>
+        		<li class="map-com hfjnc">
+        			<span class="map-span area-box">
+	    				<span class="dot"></span>
+		    				<span class="pulse delay-10"></span>
+							<span class="pulse delay-09"></span>
+							<span class="pulse delay-08"></span>
+		    			</span>
+        			<span class="dh-com">益林镇恒富家庭农场</span>
+        		</li>
+        		<li class="map-com xcnc">
+        			<span class="map-span area-box">
+	    				<span class="dot"></span>
+							<span class="pulse delay-06"></span>
+							<span class="pulse delay-05"></span>
+							<span class="pulse delay-04"></span>
+		    			</span>
+        			<span class="dh-com">醒成蔬菜合作社</span>
+        		</li>
+        		<li class="map-com lgnc">
+        			<span class="map-span area-box">
+	    				<span class="dot"></span>
+		    				<span class="pulse delay-10"></span>
+							<span class="pulse delay-09"></span>
+							<span class="pulse delay-08"></span>
+		    			</span>
+        			<span class="dh-com">硕集李刚家庭农场</span>
+        		</li>
+        		<li class="map-com hmnc">
+        			<span class="map-span area-box">
+	    				<span class="dot"></span>
+							<span class="pulse delay-06"></span>
+							<span class="pulse delay-05"></span>
+							<span class="pulse delay-04"></span>
+		    			</span>
+        			<span class="dh-com">古河红梅家庭农场</span>
+        		</li>
+        		<li class="map-com xtnc">
+        			<span class="map-span area-box">
+	    				<span class="dot"></span>
+	    				<span class="pulse delay-10"></span>
+						<span class="pulse delay-09"></span>
+						<span class="pulse delay-08"></span>
+	    			</span>
+        			<span class="dh-com">鑫土地家庭农场</span>
+        		</li>
+        		<li class="map-com yjgnc">
+        			<span class="map-span area-box">
+	    				<span class="dot"></span>
+							<span class="pulse delay-06"></span>
+							<span class="pulse delay-05"></span>
+							<span class="pulse delay-04"></span>
+		    			</span>
+        			<span class="dh-com">益稼谷物种植专业合作社</span>
+        		</li>
+        		<li class="map-com lqnc">
+        			<span class="map-span area-box">
+	    				<span class="dot"></span>
+		    				<span class="pulse delay-10"></span>
+							<span class="pulse delay-09"></span>
+							<span class="pulse delay-08"></span>
+		    			</span>
+        			<span class="dh-com">罗桥有机稻米基地</span>
+        		</li>
+            </ul>
+        </div>
+        <div class="jd-alert">
+        	<div class="jbxx-top"><span class="jd-line"></span><span class="jbxx">基本信息</span><img class="jd-close" src="images/fn-alert-close.png"/></div>
+        	<div class="jbxx-box">
+        		<div class="jd-com jd-first">基地类型:<span class="jd-type"></span></div>
+        		<div class="jd-com">基地面积:<span class="jd-mj"></span></div>
+        		<div class="jd-com">作物品种:<span class="jd-pz"></span></div>
+        		<div class="jd-com">基地负责人:<span class="jd-fzr"></span></div>
+        		<div class="jd-com"><span class="jrjd">进入基地<img style="margin-left:5px;vertical-align:middle;" src="images/fn-more.png"/></span></div>
+        	</div>
+        </div>
+        <div class="col03">
+            <div class="box">
+                <div class="title"><h2>农产品生产动态</h2></div> 
+                <div id="ncp-box">
+					<ul class="ncp-heads">
+						<li>
+							<span>基地名称</span>
+							<span>种类</span>
+							<span>时间</span>
+							<span>动态</span>
+						</li>
+					</ul>
+					<div id="scrollBox" class="scrollBox">
+						<ul id="con1" class="ncp-con1">
+							<li>
+								<span class="span-jd" title="阜宁县益林镇恒富家庭农场">阜宁县益林镇恒富家庭农场</span>
+								<span>水稻</span>
+								<span>2018-03-23</span>
+								<span class="fn-dt">施肥</span>
+							</li>
+							<li>
+								<span class="span-jd" title="有机基地">有机基地</span>
+								<span>水稻</span>
+								<span>2018-03-23</span>
+								<span class="fn-dt">施肥</span>
+							</li>
+							<li>
+								<span class="span-jd" title="阜宁县益林镇恒富家庭农场">阜宁县益林镇恒富家庭农场</span>
+								<span>跑步机</span>
+								<span>2018-03-23</span>
+								<span class="fn-dt">打疫苗</span>
+							</li>
+							<li>
+								<span class="span-jd">有机基地</span>
+								<span>棉花</span>
+								<span>2018-03-23</span>
+								<span class="fn-dt">施肥</span>
+							</li>
+							<li>
+								<span class="span-jd">双减基地</span>
+								<span>西瓜</span>
+								<span>2018-03-23</span>
+								<span class="fn-dt">施肥</span>
+							</li>
+							<li>
+								<span class="span-jd">有机基地</span>
+								<span>小麦</span>
+								<span>2018-03-23</span>
+								<span class="fn-dt">施肥</span>
+							</li>
+						</ul>
+						<ul id="con2" class="ncp-con2"></ul>
+					</div>
+				</div>
+            </div>
+            <div class="box">
+                <div class="title"><h2>阜宁概况</h2></div> 
+                <div class="fngk">
+                	<p>阜宁县，地处江淮平原中部，县域介于北纬33°26′~33°59′、东径119°27′~119°58′之间，南北长52.5公里，东西宽48公里，总面积143877.95公顷，耕地面积89951.9公顷;人口110.9万，辖4个街道，13个镇，"两区两园一湖"。阜宁县背倚苏北平原，面临苏中水网，南与建湖县毗邻，北与滨海县接壤，东与射阳县相连，西与淮安市、涟水县隔废黄河相望，西南与淮安市淮安区交界。</p>
+					<p>阜宁是历史悠久的县份。古称黄浦，宋称庙湾，清雍正九年(1731年)建县，史载阜宁"阜明水秀，乡坊稠密，土地肥饶，民灶辐辏"，素有"江淮乐地"之称。</p>
+					<p>阜宁人文荟萃，人杰地灵，是著名的"散文之乡"、"淮剧之乡"、"杂技之乡"、"全国建筑之乡"和"长寿之乡"。</p>
+                </div>
+            </div>	
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="col04">
+            <div class="box" id="title">
+                <div class="title"><h2>农业物联网数据</h2></div>
+                <div id="nywlw-box">
+					<div id="nywlwBox" class="nywlwBox">
+						<ul id="nywlwcon1" class="nywlw-con1">
+							<li class="nywlw-jd nywlw-com">双城基地</li>
+							<li class="nywlw-com">
+								<span class="nywlw-span"><img src="images/fn-nywlw01.png"/><span class="nywlw-span-con"><span class="nywlw-art">空气温度01: </span><span class="nywlw-yellow">21.0℃</span></span></span>
+							</li>
+							<li class="nywlw-com">
+								<span class="nywlw-span"><img src="images/fn-nywlw02.png"/><span class="nywlw-span-con"><span class="nywlw-art">空气温度 01: </span><span class="nywlw-yellow">39.2％RH</span></span></span>
+							</li><li class="nywlw-com">
+								<span class="nywlw-span"><img src="images/fn-nywlw01.png"/><span class="nywlw-span-con"><span class="nywlw-art">空气温度01 : </span><span class="nywlw-yellow">21.0℃</span></span></span>
+							</li>
+							<li class="nywlw-com">
+								<span class="nywlw-span"><img src="images/fn-nywlw02.png"/><span class="nywlw-span-con"><span class="nywlw-art">空气温度 01: </span><span class="nywlw-yellow">39.2％RH</span></span></span>
+							</li>
+							<li class="nywlw-com">
+								<span class="nywlw-span"><img src="images/fn-nywlw01.png"/><span class="nywlw-span-con"><span class="nywlw-art">空气温度01 : </span><span class="nywlw-yellow">21.0℃</span></span></span>
+							</li>
+							<li class="nywlw-com">
+								<span class="nywlw-span"><img src="images/fn-nywlw02.png"/><span class="nywlw-span-con"><span class="nywlw-art">空气温度 01: </span><span class="nywlw-yellow">39.2％RH</span></span></span>
+							</li>
+							<!--<li class="nywlw-com">
+								<span class="nywlw-span"><img src="images/fn-nywlw01.png"/><span class="nywlw-span-con"><span class="nywlw-art">空气温度 : </span><span class="nywlw-yellow">21.0℃</span></span></span>
+								<span class="nywlw-span"><img src="images/fn-nywlw02.png"/><span class="nywlw-span-con"><span class="nywlw-art">空气温度 : </span><span class="nywlw-yellow">39.2％RH</span></span></span>
+							</li>
+							<li class="nywlw-com">
+								<span class="nywlw-span"><img src="images/fn-nywlw03.png"/><span class="nywlw-span-con"><span class="nywlw-art">风向 : </span><span class="nywlw-yellow">西风</span></span></span>
+								<span class="nywlw-span"><img src="images/fn-nywlw04.png"/><span class="nywlw-span-con"><span class="nywlw-art">风速 : </span><span class="nywlw-yellow">5.600m/s</span></span></span>
+							</li>
+							<li class="nywlw-com">
+								<span class="nywlw-span"><img src="images/fn-nywlw05.png"/><span class="nywlw-span-con"><span class="nywlw-art">雨量 : </span><span class="nywlw-yellow">0.0mm</span></span></span>
+								<span class="nywlw-span"><img src="images/fn-nywlw06.png"/><span class="nywlw-span-con"><span class="nywlw-art">总辐射 : </span><span class="nywlw-yellow">689w/m²</span></span></span>
+							</li>
+							<li class="nywlw-com">
+								<span class="nywlw-span"><img src="images/fn-nywlw07.png"/><span class="nywlw-span-con"><span class="nywlw-art">土壤温度1 : </span><span class="nywlw-yellow">9.8℃</span></span></span>
+								<span class="nywlw-span"><img src="images/fn-nywlw07.png"/><span class="nywlw-span-con"><span class="nywlw-art">土壤温度2 : </span><span class="nywlw-yellow">-30.2℃</span></span></span>
+							</li>
+							<li class="nywlw-com">
+								<span class="nywlw-span"><img src="images/fn-nywlw07.png"/><span class="nywlw-span-con"><span class="nywlw-art">土壤温度3 : </span><span class="nywlw-yellow">-30.2℃</span></span></span>
+								<span class="nywlw-span"><img src="images/fn-nywlw07.png"/><span class="nywlw-span-con"><span class="nywlw-art">土壤温度4 : </span><span class="nywlw-yellow">-30.2℃</span></span></span>
+							</li>
+							<li class="nywlw-com">
+								<span class="nywlw-span"><img src="images/fn-nywlw08.png"/><span class="nywlw-span-con"><span class="nywlw-art">土壤水分1 : </span><span class="nywlw-yellow">41.6%</span></span></span>
+								<span class="nywlw-span"><img src="images/fn-nywlw08.png"/><span class="nywlw-span-con"><span class="nywlw-art">土壤水分2 : </span><span class="nywlw-yellow">41.6%</span></span></span>
+								
+							</li>-->
+						</ul>
+						<ul id="nywlwcon2" class="nywlw-con2"></ul>
+					</div>
+				</div>
+            </div>
+        </div>
+        <div class="col05">
+            <div class="boxs">
+                <div class="titles"><h2>农产品溯源</h2></div>   
+                <div id="box">
+					<ul class="table-heads">
+						<li>
+							<span>基地类别</span>
+							<span>品种</span>
+							<span>生产批次</span>
+							<span>规模</span>
+							<span>采收时间</span>
+							<span>二维码</span>
+						</li>
+					</ul>
+					<div id="ncpsy" class="scrollbox">
+						<ul id="ncpsy-con" class="con1">
+							<li>
+								<span title="阜宁县益林镇恒富家庭农场">阜宁县益林镇恒富家庭农场</span>
+								<span>奥奥水稻</span>
+								<span>20180328</span>
+								<span>1000亩</span>
+								<span>2018-03-28</span>
+								<span><img style="vertical-align:middle;" src="images/fn-ewm.png"/></span>
+							</li>
+							<li>
+								<span title="有机基地">有机基地</span>
+								<span>奥奥水稻</span>
+								<span>20180328</span>
+								<span>1000亩</span>
+								<span>2018-03-28</span>
+								<span><img style="vertical-align:middle;" src="images/fn-ewm.png"/></span>
+							</li>
+							<li>
+								<span title="双城基地">双城基地</span>
+								<span>奥奥水稻</span>
+								<span>20180328</span>
+								<span>1000亩</span>
+								<span>2018-03-28</span>
+								<span><img style="vertical-align:middle;" src="images/fn-ewm.png"/></span>
+							</li>
+							<li>
+								<span title="有机基地">无机基地</span>
+								<span>奥奥水稻</span>
+								<span>20180328</span>
+								<span>1000亩</span>
+								<span>2018-03-28</span>
+								<span><img style="vertical-align:middle;" src="images/fn-ewm.png"/></span>
+							</li>
+						</ul>
+						<div id="ncpsy-cons" class="con2"></div>
+					</div>
+				</div>
+               	<div class="sy-alert">
+		        	<div class="sy-top"><span class="sy-line"></span><span class="syxx">追溯信息</span><img id="sy-close" class="sy-close" src="images/fn-alert-close.png"/></div>
+		        	<div class="sy-box">
+		        		<div class="sy-com sy-first">基地类别:<span class="sy-type">双城基地</span></div>
+		        		<div class="sy-com">品种:<span class="sy-pz">奥奥水稻</span></div>
+		        		<div class="sy-com">生产批次:<span class="sy-scpc">20180212</span></div>
+		        		<div class="sy-com">规模:<span class="sy-gm">xxxx亩</span></div>
+		        		<div class="sy-com">采收时间:<span class="sy-cssj">xxxx</span></div>
+		        		<div class="sy-ewm">
+		        			<img src="images/fn-sy-ewm.png"/>
+		        			<p class="sy-smcx">扫码查询</p>
+		        		</div>
+		        	</div>
+		        </div>
+            	<i class="left-top"></i>
+            	<i class="right-bottom"></i>
+            </div>
+            <div class="boxs">
+                <div class="titles" style="padding:10px 32px 12px;"><h2>预警分析</h2></div>
+                <div id="boxs">
+					<ul class="yj-head">
+						<li>
+							<span>时间</span>
+							<span style="margin-left:78px;">基地</span>
+							<span style="margin-left:168px;padding-right:120px;">预警分析</span>
+						</li>
+					</ul>
+					<div id="yjfx" class="scrollbox">
+						<ul id="yjfx-con" class="con1">
+							<li>
+								<span class="yjfx-time">2018-12-16</span>
+								<span class="yjfx-jd" title="阜宁县益林镇恒富家庭农场">阜宁县益林镇恒富家庭农场</span>
+								<span class="yjfx-cont">在<i>[大棚监控]</i>基地下的<i>[新迪嫁园]</i>地块下名称为<i>[光照强度06]</i>的传感器数据高于<i>[100.05]</i></span>
+							</li>
+							<li>
+								<span class="yjfx-time">2018-12-16</span>
+								<span class="yjfx-jd" title="大棚基地">大棚基地</span>
+								<span class="yjfx-cont">在<i>[大棚监控]</i>基地下的<i>[新迪嫁园]</i>地块下名称为<i>[光照强度06]</i>的传感器数据高于<i>[100.05]</i></span>
+							</li>
+							<li>
+								<span class="yjfx-time">2018-12-16</span>
+								<span class="yjfx-jd" title="阜宁县益林镇恒富家庭农场">阜宁县益林镇恒富家庭农场</span>
+								<span class="yjfx-cont">在<i>[大棚监控]</i>基地下的<i>[新迪嫁园]</i>地块下名称为<i>[光照强度06]</i>的传感器数据高于<i>[100.05]</i></span>
+							</li>
+							<li>
+								<span class="yjfx-time">2018-12-16</span>
+								<span class="yjfx-jd" title="大棚基地">大棚基地</span>
+								<span class="yjfx-cont">在<i>[大棚监控]</i>基地下的<i>[新迪嫁园]</i>地块下名称为<i>[光照强度06]</i>的传感器数据高于<i>[100.05]</i></span>
+							</li>
+						</ul>
+						<div id="yjfx-cons" class="con2"></div>
+					</div>
+				</div>
+                
+  				<i class="left-top"></i>
+            	<i class="right-bottom"></i>
+            </div>
+        </div>
+        <div class="col06">
+            <div class="box">
+                <div class="title"><h2>远程物联控制</h2></div>  
+                <ul class="ycwljk">
+                	<li class="zdp active">水泵</li>
+                	<li class="tc">天窗</li>
+                	<li class="fj">风机</li>
+                	<li class="sl">湿帘</li>
+                </ul>
+                <div class="yc-box">
+                	<ul class="yc-box-ul">
+                		<li>
+                			<span class="ms">模 式</span><span class="zd-sd"><span class="zd com">自动</span><span class="sd">手动</span></span>
+                		</li>
+                		<li class="zt-con" id="zt" style="display:none;">
+                			<span class="zt">状 态</span><span class="open-box"><span class="open com">开</span><span class="close">关</span></span>
+                		</li>
+                		<li class="zt-con" id="dqzt" style="display:none;">
+                			<span><span class="dqzt">当前状态</span><span class="dq-open">开</span></span></span>
+                		</li>
+                		<!--<li>
+                			<span class="qdtx">启动提醒:</span><span class="sbkq">设备已开启</span><span class="sb-time">25分25秒</span>
+                		</li>-->
+                	</ul>
+                </div>
+                <div class="tc-box" style="display:none;">
+                	<ul class="yc-box-ul">
+                		<li>
+                			<span class="ms">模 式</span><span class="zd-sd"><span class="zds com active">自动</span><span class="sds">手动</span></span>
+                		</li>
+                		<li class="zt-con" id="sdsb" style="display:none;">
+                			<span class="sdsb">手动识别</span><span class="sdsb-cont"><span class="sdsb-com sdzk">展开</span><span class="sdsb-com sdtz">停止</span><span class="sdsb-com sdsl">收拢</span></span>
+                		</li>
+                		<li class="zt-con" id="dqzts" style="display:none;">
+                			<!--<span class="dqzt">当前状态</span><span class="dqzt-cont"><span class="dqzt-com dqzk">展开</span><span class="dqzt-com dqtz">停止</span><span class="sdsb-com dqsl">收拢</span></span>-->
+                			<span class="dqzt">当前状态</span><span class="dqzt-cont"><span class="dqzt-com dqzk">展开</span></span>                		
+                		</li>
+                	</ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="js/jquery.min.js"></script>
+   	<script type="text/javascript" src="js/echarts.min.js" ></script>
+   	<script type="text/javascript" src="js/echarts.common.min.js" ></script>
+    
+    <script type="text/javascript" src="js/index.js" ></script>
+    <script>
+        //全屏铺满
+        var ratioX = $(window).width()/1920;
+        var ratioY = $(window).height()/1080;
+        $("body").css({
+            transform: "scale("+ratioX+","+ratioY+")",
+            transformOrigin: "left top",
+            backgroundSize: "100% 100%",
+        });
+	    //调整浏览器窗口全屏铺满
+	    $(window, document).resize(function() {
+	        var ratioX = $(window).width()/1920;
+	        var ratioY = $(window).height()/1080;
+	        $("body").css({
+	            transform: "scale("+ratioX+","+ratioY+")",
+	            transformOrigin: "left top",
+	            backgroundSize: "100% 100%"
+	        });
+	    });
+	</script>
+</body>
+</html>

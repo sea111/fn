@@ -1,0 +1,147 @@
+html {
+    font-family: 微软雅黑, 宋体, 黑体, Arial;
+    color: #fff;
+}
+body {
+    background-color: #072a4b;
+    background: url("");
+    filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#070a19,endcolorstr=#072a4b,gradientType=0);
+    -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#070a19,endcolorstr=#072a4b,gradientType=0);/*IE8*/
+    background: #072a4b; /* 一些不支持背景渐变的浏览器 */
+    background:-moz-linear-gradient(top, #070a19, rgba(7, 42, 75, 1));
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#070a19), to(rgba(7, 42, 75, 1)));
+    background:-o-linear-gradient(top, #070a19, rgba(7, 42, 75, 1));
+}
+.clearfix:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden
+}
+.clearfix {
+    *+height:1%;
+}
+.wrap {
+    width: 1400px;
+    margin: 0 auto;
+}
+/*header*/
+.header {
+    position: relative;
+    height: 170px;
+    /*margin-bottom: 28px;*/
+}
+.header-img {
+    margin-top: 56px;
+}
+ul.menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    font-size: 14px;
+}
+ul.menu li {
+    display: inline-block;
+    width: 152px;
+    height: 48px;
+    line-height: 48px;
+    margin-left: 20px;
+    background: url("../images/menuitem.png");
+    text-align: center;
+    cursor: pointer;
+}
+ul.menu li:hover {
+    background: url("../images/menuitem_h.png");
+}
+ul.menu li a.menuitem{
+    font-size: 14px;
+}
+/*content*/
+.content {
+    margin-bottom: 60px;
+}
+ul.boxs li {
+    float: left;
+    width: 460px;
+    margin-right: 10px;
+}
+ul.boxs li:last-child {
+    margin-right: 0;
+}
+a {
+    display: block;
+    position: relative;
+    font-size: 18px;
+    height: 225px;
+    color: #fff;
+    text-align: center;
+}
+a > span{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+ul.boxs li.sbox {
+    width: 225px;
+}
+ul.box li.lbox {
+    height: 460px;
+}
+ul.boxs li.noner {
+    margin-right: 0;
+}
+ul.box li {
+    height: 225px;
+    margin-bottom: 10px;
+}
+.bg-blue {
+    background: url("../images/bg_blue.png") repeat;
+}
+.bg-white {
+    background: url("../images/bg_white.png") repeat;
+}
+.bg-green {
+    background: url("../images/bg_green.png") repeat;
+}
+.bg-yellow {
+    background: url("../images/bg_yellow.png") repeat;
+}
+
+.box01 span {
+    position: absolute;
+    top: 80px;
+    left: 70px;
+    display: inline-block;
+}
+.box01 img {
+    position: absolute;
+    top: 60px;
+    right: 80px;
+}
+.box02 span {
+    margin: 36px 0 20px 0;
+}
+.box03 span {
+    margin: 36px 0 20px 0;
+    color: #666;
+}
+span.c-blue {
+    color: #2080d4;
+}
+.box04 span {
+    margin: 100px 0 100px 0;
+}
+.mb {
+    background: url("../images/mb.png") repeat;
+}
+
+/*footer*/
+.footer {
+    height: 40px;
+    line-height: 40px;
+    background: #09345c;
+    font-size: 14px;
+    font-family: 黑体, 微软雅黑, 宋体, Arial;
+    text-align: center;
+}
